@@ -9,3 +9,7 @@ ls / -laR  | grep .cfm
 box install --verbose
 box server start cfengine=$1 --trace
 box testbox run
+echo "done"
+box testbox run
+echo "done again"
+box server log
