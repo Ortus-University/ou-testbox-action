@@ -9,7 +9,7 @@ box server start cfengine=$1
 box testbox run outputFile=testbox.xml reporter=junit
 echo "done1"
 cat /github/workspace/testbox.xml
-box testbox run outputformats=json,simple outputFile=testbox.xml
+box testbox run outputformats=json,simple reporter=simple outputFile=testbox.xml
 echo "done2"
 cat /github/workspace/testbox.xml
 box server log
