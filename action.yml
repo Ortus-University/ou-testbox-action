@@ -1,10 +1,10 @@
 # action.yml
-name: 'CFML TestBox Test Runner'
-author: 'Matt Gifford aka coldfumonkeh'
+name: 'Ortus University TestBox Test Runner'
+author: 'Ortus University'
 description: 'Run CFML unit tests using CommandBox and TestBox'
 inputs:
   cfml-engine:  # id of input
-    description: 'The CFML engine to test against'
+    description: 'The CFML engine to test and grade'
     required: true
     default: 'lucee@5'
 runs:

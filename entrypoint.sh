@@ -6,4 +6,4 @@ echo "Your CFML engine of choice is $1"
 
 box install production=false
 box server start cfengine=$1 --trace
-box testbox run outputFile=testbox.xml reporter=junit
+box testbox run outputFile=testbox.xml reporter=junit 
