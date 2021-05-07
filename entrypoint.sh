@@ -10,4 +10,5 @@ box testbox run outputFile=testbox.xml reporter=junit
 echo "done"
 box testbox run outputFile=testbox.xml reporter=junit
 echo "done again"
+less /github/workspace/testbox.xml
 box server log
