@@ -8,4 +8,4 @@ pwd
 ls / -laR  | grep .cfm
 box install --verbose
 box server start cfengine=$1 --trace
-box testbox run outputFile=testbox.xml reporter=junit
+box testbox run
