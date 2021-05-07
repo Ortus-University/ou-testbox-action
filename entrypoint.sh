@@ -4,12 +4,10 @@ echo "Starting the testing script"
 
 echo "Your CFML engine of choice is $1"
 
-pwd
-ls / -laR  | grep .cfm
 box install --verbose
-box server start cfengine=$1 --trace
-box testbox run
+box server start cfengine=$1
+box testbox run outputFile=testbox.xml reporter=junit
 echo "done"
-box testbox run
+box testbox run outputFile=testbox.xml reporter=junit
 echo "done again"
 box server log
