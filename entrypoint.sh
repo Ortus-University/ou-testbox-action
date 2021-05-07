@@ -8,7 +8,5 @@ box install
 box server start cfengine=$1
 box testbox run outputFile=testbox.xml reporter=junit
 echo "done"
-box testbox run outputFile=testbox.xml reporter=junit
-echo "done again"
-echo "what is this" 
+cat /github/workspace/testbox.xml
 box server log
