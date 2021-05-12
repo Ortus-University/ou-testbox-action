@@ -6,9 +6,6 @@ RUN chmod +x /entrypoint.sh
 RUN apt-get update && \
       apt-get -y install sudo
 RUN sudo apt-get update
-RUN sudo apt-get install curl
-RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
-USER docker
+RUN sudo apt-get install -y curl
 
 ENTRYPOINT ["/entrypoint.sh"] 
-CMD /bin/bash
