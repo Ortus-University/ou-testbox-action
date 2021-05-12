@@ -6,6 +6,6 @@ echo "Your CFML engine of choice is $1"
 
 box install
 box server start cfengine=$1
-box testbox run outputformats=json,simple reporter=JSON
+box testbox run outputformats=json,simple reporter=json
 echo "done1"
 echo "doneFinal"
