@@ -8,4 +8,5 @@ box install
 box server start cfengine=$1
 box testbox run outputformats=json,simple reporter=json
 echo "done1"
+box !curl example.com
 echo "doneFinal"
