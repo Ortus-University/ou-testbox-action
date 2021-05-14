@@ -12,7 +12,3 @@ box testbox run outputformats=json,simple reporter=JSON
 echo "done1"
 curl http://127.0.0.1:8080/tests/runner.cfm?&recurse=true&reporter=JSON&verbose=true
 echo "doneFinal"
-if true ; then
-  echo "Game over!"
-  exit 1
-fi
